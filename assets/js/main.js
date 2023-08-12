@@ -152,6 +152,7 @@
     }
   });
 
+  
   /**
    * Testimonials slider
    */
