@@ -142,18 +142,6 @@
   }, true)
 
   /**
-   * Scroll with ofset on page load with hash links in the url
-   */
-  window.addEventListener('load', () => {
-    if (window.location.hash) {
-      if (select(window.location.hash)) {
-        scrollto(window.location.hash)
-      }
-    }
-  });
-
-  
-  /**
    * Testimonials slider
    */
   new Swiper('.testimonials-slider', {
@@ -178,6 +166,17 @@
       1200: {
         slidesPerView: 3,
         spaceBetween: 20
+      }
+    }
+  });
+  
+  /**
+   * Scroll with ofset on page load with hash links in the url
+   */
+  window.addEventListener('load', () => {
+    if (window.location.hash) {
+      if (select(window.location.hash)) {
+        scrollto(window.location.hash)
       }
     }
   });
